@@ -14,7 +14,8 @@ namespace FindVehicleApp.Data
             : base(options)
         {
         }
-
+        public virtual DbSet<Make> Makes { get; set; }
+        public virtual DbSet<Feature> Features { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
